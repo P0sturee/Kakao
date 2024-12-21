@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Feiticeira</title>
+    <style>
+        /* Fundo temático */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            color: #f5f5f5;
+            background: url('https://img.quizur.com/f/img5fb8116ac52002.36271395.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        /* Container principal */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        /* Título com efeito */
+        h1 {
+            font-size: 3rem;
+            color: #ffdb58;
+            text-shadow: 3px 3px 10px #000, 0 0 20px #ffdb58;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 3px 3px 10px #000, 0 0 20px #ffdb58;
+            }
+            to {
+                text-shadow: 5px 5px 20px #000, 0 0 40px #ffdb58;
+            }
+        }
+
+        /* Mensagem romântica */
+        .message {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 700px;
+        }
+
+        /* Palavra animada */
+        .magic-word {
+            display: inline-block;
+            color: #fff;
+            font-weight: bold;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Botão com feitiço */
+        .spell-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0000, #ff8800);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 136, 0, 0.7);
+            animation: glow-btn 2s infinite alternate;
+        }
+
+        @keyframes glow-btn {
+            from {
+                box-shadow: 0 0 10px rgba(255, 136, 0, 0.5);
+            }
+            to {
+                box-shadow: 0 0 25px rgba(255, 136, 0, 0.9);
+            }
+        }
+
+        .spell-btn:hover {
+            background: linear-gradient(45deg, #ff8800, #ff0000);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: black;
+        }
+
+        /* Estrelas mágicas */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #131313;
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fundo de estrelas mágicas -->
+    <div class="stars">
+        <!-- Estrelas aleatórias -->
+        <div class="star" style="top: 20%; left: 10%;"></div>
+        <div class="star" style="top: 50%; left: 30%;"></div>
+        <div class="star" style="top: 70%; left: 60%;"></div>
+        <div class="star" style="top: 40%; left: 80%;"></div>
+        <div class="star" style="top: 30%; left: 50%;"></div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Para Minha Feiticeira</h1>
+        <p class="message">
+            Eu te amo muito, e desde que você chegou na minha vida, <br>
+            cada dia se torna mais <span class="magic-word">mágico</span>.  
+            Você é a luz que me guia, minha coragem, minha salvação. <br>
+            Obrigado por me salvar de tudo.  
+        </p>
+        <!-- Botão com "feitiço" -->
+        <button class="spell-btn" onclick="castSpell()">Clique para lançar um feitiço</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        
+            
+        
+        Feito com magia e amor por você ❤️
+    
+    </footer>
+
+    <!-- Script de feitiço -->
+    <script>
+        function castSpell() {
+            alert("Expecto Patronum! Você lançou um feitiço de amor!");
+        }
+    </script>
+</body>
+</html>
